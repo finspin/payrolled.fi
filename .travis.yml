@@ -4,6 +4,7 @@ rvm:
 
 install:
   - gem install jekyll
+  - pip install --user boto3
 
 script:
   - python scripts/get-jobs.py
