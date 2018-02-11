@@ -1,6 +1,7 @@
 ---
 title: Why public salaries?
 layout: page
+permalink: /why/
 ---
 
  <div class="why content">
