@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body id="homepage">
+{% include navigation.html %}
+
+<div class="content container">
+    <div class="job-listing">
+        {% for job in site.data.jobs %}
+            <a href="#">
+                <div class="row job">
+                    <div class="col-xs-12 col-md-9">
+                        <div class="job-title">
+                            <a href="{{ job.url }}">{{ job.title }}</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="job-salary">€{{ job.salary.from }} - {{ job.salary.to }}</div>
+                    </div>
+                    <div class="col-md-12">
+                        <span class="job-company text-muted">
+                            <small>
+                               {{ job.company.name }} &nbsp;&nbsp;|&nbsp;&nbsp;
+                            </small>
+                            <small>
+                                <i class="fa fa-map-marker" style="color: #acacac">&nbsp;</i>
+                            </small>
+                            <small>
+                                <span class="location text-muted">
+                                    {{ job.location }} &nbsp;&nbsp;|&nbsp;&nbsp;
+                                </span>
+                            </small>
+                            <small>
+                                <i class="fa fa-calendar" style="color: #acacac">&nbsp;</i>
+                            </small>
+                            <small>
+                                <span class="job-posted text-muted">
+                                    {{ job.date | date: '%d %B %Y' }}
+                                </span>
+                            </small>
+                        </span>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+</body>
+{% include footer.html %}
+</html>

@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+- 2.3.3
+
+install:
+  - gem install jekyll
+
+script:
+  - python scripts/get-jobs.py
+  - jekyll build
+
+deploy:
+  on:
+    branch: master
+  provider: s3
+  bucket: www.payrolled.fi
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: us-west-2
+  acl: public_read
+  skip_cleanup: true
+  local_dir: ./_site

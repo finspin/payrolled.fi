@@ -1,0 +1,448 @@
+html {
+    /*Solution for pushing footer to the bottom of the page*/
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    /*padding-top: 50px;*/
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+}
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+/*Fix for issue with toggle menu bar icon being pushed to the center*/
+/*together with site name*/
+@media (max-width: 575px) {
+    .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/********** GENERAL **********/
+
+.pull-right {
+    float: right !important;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/********** CONTENT **********/
+
+.content {
+    padding-top: 50px;
+}
+
+@media (max-width: 575px) {
+    .content {
+        padding-top: 10px;
+    }
+
+    .content.job {
+        padding-top: 30px;
+    }
+}
+
+/********** NAVIGATION **********/
+
+.nav {
+    padding-right: 0.75em;
+}
+
+.nav span {
+    margin-left: 30px;
+}
+
+.navbar {
+    background-color: #4A3929 !important;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.3);
+}
+
+.navbar-nav > li {
+    color: #f0f0f0 !important;
+}
+
+.navbar a {
+    color: #f0f0f0 !important;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.navbar a.btn-addjob {
+    /*background-color: #fff;*/
+    /*color: #4a3929 !important;*/
+    /*font-weight: 600;*/
+    margin-top: 10px;
+}
+
+.navbar .nav-item {
+    padding-left: 30px;
+}
+
+.navigation {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/********** SUBSCRIPTION **********/
+
+.subscription {
+    background-color: #f4f4f4 !important;
+    padding-top: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.subscription select {
+    width: 100%;
+}
+
+.subscription button {
+    /*background-color: #373a3c;*/
+    background-color: #50b7fd;
+    color: #fff;
+    border-color: #50b7fd;
+}
+
+.subscription button:hover {
+    background-color: #29a0fd;
+    border-color: #29a0fd;
+}
+
+
+/********** JOB LISTING **********/
+
+.job-listing {
+    font-size: 1.2rem;
+}
+
+.job-listing a {
+    display: block;
+    color: #333;
+}
+
+.job-listing a:hover {
+    text-decoration: none;
+    color: #373a3c;
+}
+
+.job-listing .row.job {
+    padding-bottom: 15px;
+    padding-top: 30px;
+    border-bottom: 1px solid #ececec;
+}
+
+.job-listing .row.job:hover {
+    background-color: rgba(94, 189, 255, 0.10);
+}
+
+.job-title {
+    text-transform: capitalize;
+}
+
+a .job-title {
+    color: #222;
+    font-weight: 400;
+    font-size: 1.35rem;
+}
+
+.job-salary {
+    text-align: left;
+}
+
+@media(min-width: 992px){
+    .job-salary {
+        text-align: right;
+    }
+}
+
+
+/********** LEFT / RIGHT COLUMNS **********/
+
+.left-column {
+    padding-right: 40px;
+}
+
+.right-column {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 30px;
+}
+
+.right-column.sticky {
+    margin-top: -70px;
+}
+
+/********** FAQ **********/
+
+.faq .qa {
+    margin: 0 0 40px 0;
+}
+
+.faq .faq-intro {
+    margin-bottom: 50px;
+}
+
+.faq li {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+
+/********** FOOTER **********/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    /*line-height: 80px;*/
+    width: 100%;
+    color: #999;
+    padding-top: 40px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/********** LOGIN FORM **********/
+
+.login-form {
+    margin-top: 50px;
+}
+
+
+/********** THANK YOU PAGE **********/
+
+img.thank-you {
+    margin: 80px 0;
+}
+
+
+/********** ADD JOB **********/
+
+.add-job .job-form {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.add-job hr {
+    margin-bottom: 30px;
+}
+
+.add-job hr {
+    margin-bottom: 40px;
+}
+
+.add-job .form-group {
+    margin-bottom: 1.8rem;
+}
+
+.add-job label {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.add-job .tip {
+    margin-bottom: 35px;
+}
+
+.add-job .about-company {
+    padding-top: 50px;
+}
+
+.security-text {
+    display: inline;
+}
+
+/* Form validator start */
+.help-block {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #d9534f;
+}
+/* Form validator end */
+
+
+/********** JOB PAGE **********/
+
+.job .right-column {
+    font-size: 0.95rem;
+}
+
+.job-header {
+    padding-bottom: 20px;
+}
+
+.job h3 {
+    margin-bottom: 15px;
+}
+
+.job .job-description p {
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+}
+
+.job .fa-lg {
+    vertical-align: 0;
+}
+
+.job .job-apply {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fcf9e3;
+}
+
+.job .job-apply h6 {
+    margin-bottom: 15px;
+}
+
+/********** BLOG **********/
+
+.blog.content {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.blog.content p {
+    font-size: 1.25rem;
+    /*margin-bottom: 30px;*/
+    font-family: Droid Serif, Georgia,Cambria,"Times New Roman",Times,serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.70);
+    line-height: 1.6;
+}
+
+.blog.content h2, .blog.content h3, .blog.content.h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.blog.content h3 a:hover {
+    text-decoration: none;
+}
+
+.blog.content a {
+    color: rgba(4, 79, 136, 0.75);
+}
+
+.blog #disqus_thread {
+    margin-top: 50px;
+}
+
+.blog.content h3, .blog.content h4 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.blog p.article-info {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.50);
+    line-height: 1.6;
+
+}
+
+
+/********** USP **********/
+
+.usp p.card-text {
+    padding: 50px 0 40px;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+    line-height: 2.9rem;
+    color: #333;
+    text-align: center;
+}
+
+.usp {
+    background-color: rgba(94, 189, 255, 0.10);
+    border-bottom: 1px solid #eee;
+    /*Fix horizontal scrolling*/
+    margin: 0;
+}
+
+@media (max-width: 575px) {
+    .usp p.card-text {
+        font-size: 21px;
+        line-height: 1.9rem;
+        padding: 30px 0 20px;
+    }
+}
+
+
+/********** WHY **********/
+
+.why h3 {
+    line-height: 1.2em;
+}
+
+.why .reason img {
+    width: 100%;
+}
+
+.testimonial {
+    margin-bottom: 50px;
+}
+
+.why .reason {
+    font-size: 19px;
+}
+
+.why .reason p {
+    line-height: 1.8em;
+}
+
+.testimonial blockquote {
+    margin: 10px 10px 0 0;
+    background: #eff8ff;
+    padding: 20px 60px;
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.testimonial blockquote:before, .testimonial blockquote:after {
+    content: "\201C";
+    position: absolute;
+    font-size: 80px;
+    line-height: 1;
+    color: #8c8c8c;
+    font-style: normal;
+}
+
+.testimonial blockquote:before {
+    top: 0;
+    left: 10px;
+}
+
+.testimonial blockquote:after {
+    content: "\201D";
+    right: 10px;
+    bottom: -.5em;
+}
