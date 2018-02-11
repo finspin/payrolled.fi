@@ -9,7 +9,7 @@ permalink: /why/
         <hr class="mb-5"/>
         <div class="row reason">
             <div class="col-md-2 hidden-sm-down">
-                <div class="text-md-center"><img src="img/survey.png"/></div>
+                <div class="text-md-center"><img src="/img/survey.png"/></div>
             </div>
             <div class="col-md-10">
                 <h3 class="mb-3">Salary is a top priority for job seekers</h3>
@@ -29,7 +29,7 @@ permalink: /why/
         <hr class="mb-5"/>
         <div class="row reason">
             <div class="col-md-2 hidden-sm-down">
-                <div class="text-md-center"><img src="img/interview.png"/></div>
+                <div class="text-md-center"><img src="/img/interview.png"/></div>
             </div>
             <div class="col-md-10">
                 <h3 class="mb-3">Companies with open salaries receive more and better quality applications</h3>
@@ -59,7 +59,7 @@ permalink: /why/
         <hr class="mb-5"/>
         <div class="row reason">
             <div class="col-md-2 hidden-sm-down">
-                <div class="text-md-center"><img src="img/cvs.png"/></div>
+                <div class="text-md-center"><img src="/img/cvs.png"/></div>
             </div>
             <div class="col-md-10">
                 <h3 class="mb-3">People are more likely to apply for a job which discloses salary range upfront</h3>

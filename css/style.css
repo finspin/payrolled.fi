@@ -157,6 +157,7 @@ body {
 
 .job-title {
     text-transform: capitalize;
+    font-size: 1.4rem;
 }
 
 a .job-title {
