@@ -1,1 +1,184 @@
-[{"salary": {"to": 8000, "from": 5000}, "title": "Rockstar Developer", "url": "https://thehub.fi/jobs/rockstar-developer", "company": {"name": "Sumpli"}, "source": "Hub.fi", "location": "Capital Region", "date": "2018-02-10T22:41:33.297259"}, {"salary": {"to": 4200, "from": 3500}, "title": "Experienced iOS Developer", "url": "https://stackoverflow.com/jobs/163712/experienced-ios-developer-starcut", "company": {"name": "Starcut"}, "source": "Stack Overflow", "location": "Helsinki, Finland", "date": "2018-02-10T22:29:27.435247"}, {"salary": {"to": 4200, "from": 3500}, "title": "Android Developer with Rx Java experience", "url": "https://stackoverflow.com/jobs/160628/android-developer-with-rx-java-experience-starcut", "company": {"name": "Starcut"}, "source": "Stack Overflow", "location": "Helsinki, Finland", "date": "2018-02-10T22:29:27.435791"}, {"salary": {"to": 5500, "from": 4500}, "title": "Senior Full Stack Developer for Cloud Protection", "url": "https://stackoverflow.com/jobs/166165/senior-full-stack-developer-for-cloud-protection-f-secure", "company": {"name": "F-Secure"}, "source": "Stack Overflow", "location": "Helsingfors, Finland", "date": "2018-02-10T22:29:27.376419"}, {"salary": {"to": 6700, "from": 4500}, "title": "* Cloud Architect to design & build infrastructures *", "url": "https://stackoverflow.com/jobs/152629/cloud-architect-to-design-build-qvik", "company": {"name": "Qvik"}, "source": "Stack Overflow", "location": "Helsinki, Finland", "date": "2018-02-10T22:29:27.318617"}, {"salary": {"to": 6200, "from": 3500}, "title": "* Mid / Senior iOS / Android Developer (Swift, Objective-C, Java, Kotlin) *", "url": "https://stackoverflow.com/jobs/152623/mid-senior-ios-android-developer-swift-qvik", "company": {"name": "Qvik"}, "source": "Stack Overflow", "location": "Helsinki, Finland", "date": "2018-02-10T22:29:27.378017"}, {"salary": {"to": 4500, "from": 3000}, "title": "Senior Front-end Developer / Consultant - Work in an open source company!", "url": "https://stackoverflow.com/jobs/160435/senior-front-end-developer-consultant-work-in-vaadin", "company": {"name": "Vaadin"}, "source": "Stack Overflow", "location": "\u00c5bo, Finland", "date": "2018-02-10T22:29:27.437320"}, {"salary": {"to": 6000, "from": 4000}, "title": "Full stack Software Developers wanted to scale a profitable product company", "url": "https://stackoverflow.com/jobs/142219/full-stack-software-developers-wanted-to-scale-a-smartlyio", "company": {"name": "Smartly.io"}, "source": "Stack Overflow", "location": "Helsinki, Finland", "date": "2018-02-10T22:29:27.375435"}, {"salary": {"to": 6000, "from": 3500}, "title": "Experienced Software Engineer (Front-end or Full-stack)", "url": "https://stackoverflow.com/jobs/140932/experienced-software-engineer-front-end-or-full-klinik-oy", "company": {"name": "Klinik Oy"}, "source": "Stack Overflow", "location": "Helsinki, Finland", "date": "2018-02-10T22:29:27.436828"}, {"salary": {"to": 6500, "from": 4000}, "title": "* Backend master to develop robust, scalable cloud backends *", "url": "https://stackoverflow.com/jobs/152648/backend-master-to-develop-robust-scalable-qvik", "company": {"name": "Qvik"}, "source": "Stack Overflow", "location": "Helsinki, Finland", "date": "2018-02-10T22:29:27.377311"}, {"salary": {"to": 4500, "from": 3000}, "title": "Senior Java Web Developer / Consultant - Work in an open source company!", "url": "https://stackoverflow.com/jobs/123190/senior-java-web-developer-consultant-work-in-vaadin", "company": {"name": "Vaadin"}, "source": "Stack Overflow", "location": "\u00c5bo, Finland", "date": "2018-02-10T22:29:27.437837"}, {"salary": {"to": 5400, "from": 4800}, "title": "Senior Software Engineer - Big Data pipeline", "url": "https://stackoverflow.com/jobs/163723/senior-software-engineer-big-data-pipeline-paf-play-among-friends", "company": {"name": "PAF - Play Among Friends"}, "source": "Stack Overflow", "location": "Helsingfors, Finland", "date": "2018-02-10T22:29:27.378616"}, {"salary": {"to": 6000, "from": 4000}, "title": "Senior Software Consultant \u2013 work with the newest technologies!", "url": "https://stackoverflow.com/jobs/157812/senior-software-consultant-work-with-the-newest-houston-inc", "company": {"name": "Houston Inc."}, "source": "Stack Overflow", "location": "Helsinki, Finland", "date": "2018-02-10T22:29:27.436321"}]
+[
+  {
+    "salary": {
+      "to": 8000,
+      "from": 5000
+    },
+    "title": "Rockstar Developer",
+    "url": "https://thehub.fi/jobs/rockstar-developer",
+    "company": {
+      "name": "Sumpli"
+    },
+    "source": "Hub.fi",
+    "location": "Capital Region",
+    "date": "2018-02-10T22:41:33.297259"
+  },
+  {
+    "salary": {
+      "to": 4200,
+      "from": 3500
+    },
+    "title": "Experienced iOS Developer",
+    "url": "https://stackoverflow.com/jobs/163712/experienced-ios-developer-starcut",
+    "company": {
+      "name": "Starcut"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsinki, Finland",
+    "date": "2018-02-10T22:29:27.435247"
+  },
+  {
+    "salary": {
+      "to": 4200,
+      "from": 3500
+    },
+    "title": "Android Developer with Rx Java experience",
+    "url": "https://stackoverflow.com/jobs/160628/android-developer-with-rx-java-experience-starcut",
+    "company": {
+      "name": "Starcut"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsinki, Finland",
+    "date": "2018-02-12T22:29:27.435791"
+  },
+  {
+    "salary": {
+      "to": 5500,
+      "from": 4500
+    },
+    "title": "Senior Full Stack Developer for Cloud Protection",
+    "url": "https://stackoverflow.com/jobs/166165/senior-full-stack-developer-for-cloud-protection-f-secure",
+    "company": {
+      "name": "F-Secure"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsingfors, Finland",
+    "date": "2018-02-10T22:29:27.376419"
+  },
+  {
+    "salary": {
+      "to": 6700,
+      "from": 4500
+    },
+    "title": "* Cloud Architect to design & build infrastructures *",
+    "url": "https://stackoverflow.com/jobs/152629/cloud-architect-to-design-build-qvik",
+    "company": {
+      "name": "Qvik"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsinki, Finland",
+    "date": "2018-02-14T22:29:27.318617"
+  },
+  {
+    "salary": {
+      "to": 6200,
+      "from": 3500
+    },
+    "title": "* Mid / Senior iOS / Android Developer (Swift, Objective-C, Java, Kotlin) *",
+    "url": "https://stackoverflow.com/jobs/152623/mid-senior-ios-android-developer-swift-qvik",
+    "company": {
+      "name": "Qvik"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsinki, Finland",
+    "date": "2018-02-10T22:29:27.378017"
+  },
+  {
+    "salary": {
+      "to": 4500,
+      "from": 3000
+    },
+    "title": "Senior Front-end Developer / Consultant - Work in an open source company!",
+    "url": "https://stackoverflow.com/jobs/160435/senior-front-end-developer-consultant-work-in-vaadin",
+    "company": {
+      "name": "Vaadin"
+    },
+    "source": "Stack Overflow",
+    "location": "\u00c5bo, Finland",
+    "date": "2018-02-10T22:29:27.437320"
+  },
+  {
+    "salary": {
+      "to": 6000,
+      "from": 4000
+    },
+    "title": "Full stack Software Developers wanted to scale a profitable product company",
+    "url": "https://stackoverflow.com/jobs/142219/full-stack-software-developers-wanted-to-scale-a-smartlyio",
+    "company": {
+      "name": "Smartly.io"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsinki, Finland",
+    "date": "2018-02-10T22:29:27.375435"
+  },
+  {
+    "salary": {
+      "to": 6000,
+      "from": 3500
+    },
+    "title": "Experienced Software Engineer (Front-end or Full-stack)",
+    "url": "https://stackoverflow.com/jobs/140932/experienced-software-engineer-front-end-or-full-klinik-oy",
+    "company": {
+      "name": "Klinik Oy"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsinki, Finland",
+    "date": "2018-02-10T22:29:27.436828"
+  },
+  {
+    "salary": {
+      "to": 6500,
+      "from": 4000
+    },
+    "title": "* Backend master to develop robust, scalable cloud backends *",
+    "url": "https://stackoverflow.com/jobs/152648/backend-master-to-develop-robust-scalable-qvik",
+    "company": {
+      "name": "Qvik"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsinki, Finland",
+    "date": "2018-02-10T22:29:27.377311"
+  },
+  {
+    "salary": {
+      "to": 4500,
+      "from": 3000
+    },
+    "title": "Senior Java Web Developer / Consultant - Work in an open source company!",
+    "url": "https://stackoverflow.com/jobs/123190/senior-java-web-developer-consultant-work-in-vaadin",
+    "company": {
+      "name": "Vaadin"
+    },
+    "source": "Stack Overflow",
+    "location": "\u00c5bo, Finland",
+    "date": "2018-02-10T22:29:27.437837"
+  },
+  {
+    "salary": {
+      "to": 5400,
+      "from": 4800
+    },
+    "title": "Senior Software Engineer - Big Data pipeline",
+    "url": "https://stackoverflow.com/jobs/163723/senior-software-engineer-big-data-pipeline-paf-play-among-friends",
+    "company": {
+      "name": "PAF - Play Among Friends"
+    },
+    "source": "Stack Overflow",
+    "location": "Helsingfors, Finland",
+    "date": "2018-02-10T22:29:27.378616"
+  },
+  {
+    "salary": {
+      "to": 6000,
+      "from": 4000
+    },
+    "title": "Senior Software Consultant \u2013 work with the newest technologies!",
+    "url": "https://stackoverflow.com/jobs/157812/senior-software-consultant-work-with-the-newest-houston-inc",
+    "company": {
+      "name": "Houston Inc."
+    },
+    "source": "Stack Overflow",
+    "location": "Helsinki, Finland",
+    "date": "2018-02-10T22:29:27.436321"
+  }
+]
