@@ -5,7 +5,7 @@ rvm:
 install:
   - gem install jekyll
   - pip install --user boto3
-  - pip install awscli
+  - pip install --user awscli
 
 script:
   - python scripts/get-jobs.py
