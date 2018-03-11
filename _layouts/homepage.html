@@ -10,37 +10,71 @@
         {% for job in sorted_jobs %}
             <a href="#">
                 <div class="row job">
-                    <div class="col-xs-12 col-md-9">
+                    <div class="col-2 col-sm-1 source-logo">
+                        <a href="{{ job.url }}">
+                            <img src="/img/{{ job.source }}-logo.png" width="35" height="35" alt="StackOverflow" />
+                        </a>
+                    </div>
+                    <div class="col-8 col-sm-9 job-description">
                         <div class="job-title">
                             <a href="{{ job.url }}">{{ job.title }}</a>
+                            <div class="job-metadata text-muted">
+                                <small>
+                                   {{ job.company.name }} &nbsp;|&nbsp;
+                                </small>
+                                <small>
+                                    <i class="fa fa-map-marker" style="color: #acacac">&nbsp;</i>
+                                </small>
+                                <span class="location text-muted">
+                                    <small>
+                                        {{ job.location }} &nbsp;|&nbsp;
+                                    </small>
+                                </span>
+                                <!--<small>-->
+                                <!--<i class="fa fa-calendar" style="color: #acacac">&nbsp;</i>-->
+                                <!--</small>-->
+                                <small>
+                                <span class="job-posted text-muted">
+                                {{ job.date | timeago }}
+                                <!--{{ job.date | date: '%d %B %Y' }}-->
+                                </span>
+                                </small>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-3">
-                        <div class="job-salary">€{{ job.salary.from }} - {{ job.salary.to }}</div>
+                    <div class="col-2 salary">
+                        <!--€{{ job.salary.to }}<br>&#8597;<br>-->
+                        €{{ job.salary.from }}<br>&#8942;<br>
+                        €{{ job.salary.to }}
+                        <!--€{{ job.salary.to }}<br>&#8942;<br>-->
+                        <!--€{{ job.salary.from }}-->
+                        <!--<div class="job-salary">€{{ job.salary.from }}</div>-->
+                        <!--<div class="job-salary">€{{ job.salary.to }}</div>-->
                     </div>
-                    <div class="col-md-12">
-                        <span class="job-company text-muted">
-                            <small>
-                               {{ job.company.name }} &nbsp;&nbsp;|&nbsp;&nbsp;
-                            </small>
-                            <small>
-                                <i class="fa fa-map-marker" style="color: #acacac">&nbsp;</i>
-                            </small>
-                            <small>
-                                <span class="location text-muted">
-                                    {{ job.location }} &nbsp;&nbsp;|&nbsp;&nbsp;
-                                </span>
-                            </small>
-                            <small>
-                                <i class="fa fa-calendar" style="color: #acacac">&nbsp;</i>
-                            </small>
-                            <small>
-                                <span class="job-posted text-muted">
-                                    {{ job.date | date: '%d %B %Y' }}
-                                </span>
-                            </small>
-                        </span>
-                    </div>
+                    <!--<div class="col-9">-->
+                        <!--<span class="job-company text-muted">-->
+                            <!--<small>-->
+                               <!--{{ job.company.name }} &nbsp;&nbsp;|&nbsp;&nbsp;-->
+                            <!--</small>-->
+                            <!--<small>-->
+                                <!--<i class="fa fa-map-marker" style="color: #acacac">&nbsp;</i>-->
+                            <!--</small>-->
+                            <!--<small>-->
+                                <!--<span class="location text-muted">-->
+                                    <!--&lt;!&ndash;{{ job.location }} &nbsp;&nbsp;|&nbsp;&nbsp;&ndash;&gt;-->
+                                    <!--{{ job.location }}-->
+                                <!--</span>-->
+                            <!--</small>-->
+                            <!--&lt;!&ndash;<small>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="fa fa-calendar" style="color: #acacac">&nbsp;</i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</small>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<small>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<span class="job-posted text-muted">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;{{ job.date | date: '%d %B %Y' }}&ndash;&gt;-->
+                                <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</small>&ndash;&gt;-->
+                        <!--</span>-->
+                    <!--</div>-->
                 </div>
             </a>
         {% endfor %}

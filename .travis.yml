@@ -4,6 +4,7 @@ rvm:
 
 install:
   - gem install jekyll
+  - gem install jekyll-timeago
   - pip install --user boto3
   - pip install --user awscli
 

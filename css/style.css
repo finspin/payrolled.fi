@@ -62,7 +62,8 @@ body {
 }
 
 .navbar {
-    background-color: #3e47b5 !important;
+    /*background-color: #3e47b5 !important;*/
+    background-color: #333 !important;
     border-bottom: 1px solid rgba(179, 179, 179, 0.3);
     padding: 0.5rem 0;
 }
@@ -165,6 +166,15 @@ body {
 .job-salary {
     text-align: left;
     color: #50ad46;
+}
+
+.job-posted {
+    text-transform: none;
+}
+
+.salary {
+    text-align: center;
+    color: #333;
 }
 
 @media(min-width: 992px){
@@ -463,6 +473,7 @@ img.thank-you {
 
     .job-title {
         margin-bottom: 0.2rem;
+        padding-top: 0.5rem;
     }
 
     .job-title a {
@@ -473,11 +484,21 @@ img.thank-you {
         font-size: 0.9rem;
     }
 
-    /*a .job-title {*/
-    /*font-size: 1rem;*/
-    /*}*/
+    .salary {
+        padding: 0.5rem 0.8rem 0.5rem 0;
+        font-size: 0.9rem;
+    }
 
-    /*.job-listing {*/
-    /*font-size: 1rem;*/
-    /*}*/
+    .job-metadata {
+        font-size: 1rem;
+    }
+
+    .source-logo {
+        text-align: center;
+        margin: 1.2rem 0 0 0;
+    }
+
+    .job-description {
+        padding-left: 0;
+    }
 }

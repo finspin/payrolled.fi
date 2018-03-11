@@ -1,1 +1,12 @@
 title: Payrolled - IT jobs with salaries
+plugins:
+  - jekyll-timeago
+jekyll_timeago:
+  depth: 1
+  prefix: ''
+  day: 'd'
+  days: 'd'
+  week: 'w'
+  weeks: 'w'
+  month: 'm'
+  months: 'm'
