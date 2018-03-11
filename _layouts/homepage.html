@@ -6,7 +6,7 @@
 
 <div class="content container">
     <div class="job-listing">
-        {% assign sorted_jobs = (site.data.jobs | sort: 'date') | reverse %}
+        {% assign sorted_jobs = site.data.jobs | sort: 'date' | reverse %}
         {% for job in sorted_jobs %}
             <a href="#">
                 <div class="row job">

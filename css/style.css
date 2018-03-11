@@ -17,14 +17,6 @@ body {
     }
 }
 
-/*Fix for issue with toggle menu bar icon being pushed to the center*/
-/*together with site name*/
-@media (max-width: 575px) {
-    .container{
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
 
 
 /********** GENERAL **********/
@@ -70,8 +62,9 @@ body {
 }
 
 .navbar {
-    background-color: #4A3929 !important;
+    background-color: #3e47b5 !important;
     border-bottom: 1px solid rgba(179, 179, 179, 0.3);
+    padding: 0.5rem 0;
 }
 
 .navbar-nav > li {
@@ -137,7 +130,6 @@ body {
 
 .job-listing a {
     display: block;
-    color: #333;
 }
 
 .job-listing a:hover {
@@ -147,7 +139,7 @@ body {
 
 .job-listing .row.job {
     padding-bottom: 15px;
-    padding-top: 30px;
+    padding-top: 20px;
     border-bottom: 1px solid #ececec;
 }
 
@@ -160,14 +152,19 @@ body {
     font-size: 1.4rem;
 }
 
-a .job-title {
-    color: #222;
+.job-title a {
+    color: #6670df;
     font-weight: 400;
     font-size: 1.35rem;
 }
 
+.job-title a:hover {
+    color: #6670df;
+}
+
 .job-salary {
     text-align: left;
+    color: #50ad46;
 }
 
 @media(min-width: 992px){
@@ -222,6 +219,10 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+footer a {
+    color: #6670df;
 }
 
 /********** LOGIN FORM **********/
@@ -446,4 +447,37 @@ img.thank-you {
     content: "\201D";
     right: 10px;
     bottom: -.5em;
+}
+
+/*Fix for issue with toggle menu bar icon being pushed to the center*/
+/*together with site name*/
+@media (max-width: 575px) {
+    .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .job-listing {
+        font-size: 0.95rem;
+    }
+
+    .job-title {
+        margin-bottom: 0.2rem;
+    }
+
+    .job-title a {
+        font-size: 0.9rem;
+    }
+
+    .job-salary {
+        font-size: 0.9rem;
+    }
+
+    /*a .job-title {*/
+    /*font-size: 1rem;*/
+    /*}*/
+
+    /*.job-listing {*/
+    /*font-size: 1rem;*/
+    /*}*/
 }
