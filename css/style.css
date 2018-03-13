@@ -6,7 +6,6 @@ html {
 
 body {
     font-family: Roboto, sans-serif;
-    /*padding-top: 50px;*/
     /* Margin bottom by footer height */
     margin-bottom: 80px;
 }
@@ -17,23 +16,6 @@ body {
     }
 }
 
-
-
-/********** GENERAL **********/
-
-.pull-right {
-    float: right !important;
-}
-
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 70px;
-}
-
-.text-right {
-    text-align: right;
-}
 
 /********** CONTENT **********/
 
@@ -135,7 +117,6 @@ body {
 
 .job-listing a:hover {
     text-decoration: none;
-    color: #373a3c;
 }
 
 .job-listing .row.job {
@@ -148,39 +129,32 @@ body {
     background-color: rgba(94, 189, 255, 0.10);
 }
 
-.job-title {
-    text-transform: capitalize;
-    font-size: 1.4rem;
-}
-
 .job-title a {
     color: #6670df;
     font-weight: 400;
-    font-size: 1.35rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.metadata {
+    font-size: 1.1rem;
+}
+
+.salary {
+    font-size: 1rem;
 }
 
 .job-title a:hover {
     color: #6670df;
 }
 
-.job-salary {
-    text-align: left;
-    color: #50ad46;
-}
-
-.job-posted {
+.posted {
     text-transform: none;
 }
 
 .salary {
     text-align: center;
     color: #333;
-}
-
-@media(min-width: 992px){
-    .job-salary {
-        text-align: right;
-    }
 }
 
 
@@ -473,7 +447,6 @@ img.thank-you {
 
     .job-title {
         margin-bottom: 0.2rem;
-        padding-top: 0.5rem;
     }
 
     .job-title a {
@@ -485,17 +458,17 @@ img.thank-you {
     }
 
     .salary {
-        padding: 0.5rem 0.8rem 0.5rem 0;
+        padding: 0 0.8rem 0.5rem 0;
         font-size: 0.9rem;
     }
 
-    .job-metadata {
+    .metadata {
         font-size: 1rem;
     }
 
     .source-logo {
         text-align: center;
-        margin: 1.2rem 0 0 0;
+        margin: 0.2rem 0 0 0;
     }
 
     .job-description {
