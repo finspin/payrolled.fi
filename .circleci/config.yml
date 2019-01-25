@@ -13,8 +13,8 @@ jobs:
           name: Generate yaml file with jobs
           command: 'python scripts/get-jobs.py'
       - persist_to_workspace:
-          root: .
-          paths: *
+          root: ~/workspace
+          paths: .
   build_site:
     docker:
       - image: circleci/ruby:2.6.0
@@ -31,8 +31,8 @@ jobs:
           name: Build site
           command: 'jekyll build'
       - persist_to_workspace:
-          root: .
-          paths: *
+          root: ~/workspace
+          paths: .
   deploy_and_invalidate_cloudfront_cache:
     docker:
       - image: circleci/python:3.6.8
