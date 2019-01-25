@@ -15,7 +15,7 @@ jobs:
       - run:
           name: Build site
           command: 'jekyll build'
-  deploy:
+  deploy_and_invalidate_cloufront_cache:
     docker:
       - image: circleci/python:3.6.8
     steps:
@@ -33,13 +33,12 @@ jobs:
             else
               echo "Not master branch, dry run only"
             fi
-  invalidate_cloudfront_cache:
-    steps:
-      run: 
-        command: |
-          aws configure set preview.cloudfront true
-          aws cloudfront create-invalidation --distribution-id $WWW_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
-          aws cloudfront create-invalidation --distribution-id $NON_WWW_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+      - run: 
+          name: Invalidate CloudFront cache
+          command: |
+            aws configure set preview.cloudfront true
+            aws cloudfront create-invalidation --distribution-id $WWW_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+            aws cloudfront create-invalidation --distribution-id $NON_WWW_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
 
 workflows:
   version: 2
@@ -47,5 +46,4 @@ workflows:
     jobs:
       - generate_jobs_yaml
       - build_site
-      - deploy
-      - invalidate_cloudfront_cache
+      - deploy_and_invalidate_cloudfront_cache
