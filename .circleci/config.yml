@@ -3,6 +3,7 @@ jobs:
   generate_jobs_yaml:
     docker:
       - image: circleci/python:3.6.8
+    working_directory: ~/workspace
     steps:
       - checkout
       - run:
@@ -11,10 +12,16 @@ jobs:
       - run:
           name: Generate yaml file with jobs
           command: 'python scripts/get-jobs.py'
+      - persist_to_workspace:
+          root: .
+          paths: *
   build_site:
     docker:
       - image: circleci/ruby:2.6.0
+    working_directory: ~/workspace
     steps:
+      - attach_workspace:
+          at: ~/workspace
       - run:
           name: Install jekyll
           command: |
@@ -23,10 +30,16 @@ jobs:
       - run:
           name: Build site
           command: 'jekyll build'
+      - persist_to_workspace:
+          root: .
+          paths: *
   deploy_and_invalidate_cloudfront_cache:
     docker:
       - image: circleci/python:3.6.8
+    working_directory: ~/workspace
     steps:
+      - attach_workspace:
+          at: ~/workspace
       - run:
           name: Install awscli
           command: 'pip install --user awscli'
