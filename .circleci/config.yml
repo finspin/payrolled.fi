@@ -60,7 +60,7 @@ jobs:
 
 workflows:
   version: 2
-  deploy_site:
+  nightly:
     triggers:
       - schedule:
           cron: "45 10 * * *"
