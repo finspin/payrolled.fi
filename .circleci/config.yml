@@ -60,7 +60,7 @@ jobs:
 
 workflows:
   version: 2
-  nightly:
+  deploy_site:
     triggers:
       - schedule:
           cron: "45 10 * * *"
@@ -68,7 +68,6 @@ workflows:
             branches:
               only:
                 - master
-  deploy_site:
     jobs:
       - generate_jobs_yaml
       - build_site:
