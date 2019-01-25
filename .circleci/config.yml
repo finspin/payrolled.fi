@@ -60,6 +60,14 @@ jobs:
 
 workflows:
   version: 2
+  nightly:
+    triggers:
+      - schedule:
+          cron: "45 10 * * *"
+          filters:
+            branches:
+              only:
+                - master
   deploy_site:
     jobs:
       - generate_jobs_yaml
