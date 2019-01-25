@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install boto3
+          command: 'pip install --user boto3'
+      - run:
           name: Generate yaml file with jobs
           command: 'python scripts/get-jobs.py'
   build_site:
@@ -19,9 +22,6 @@ jobs:
     docker:
       - image: circleci/python:3.6.8
     steps:
-      - run:
-          name: Install boto3
-          command: 'pip install --user boto3'
       - run:
           name: Install awscli
           command: 'pip install --user awscli'
