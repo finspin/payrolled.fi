@@ -15,7 +15,7 @@ jobs:
       - run:
           name: Build site
           command: 'jekyll build'
-  deploy_and_invalidate_cloufront_cache:
+  deploy_and_invalidate_cloudfront_cache:
     docker:
       - image: circleci/python:3.6.8
     steps:
