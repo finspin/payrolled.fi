@@ -50,9 +50,9 @@ workflows:
   deploy_site:
     jobs:
       - generate_jobs_yaml
-      - build_site
+      - build_site:
           requires:
             - generate_jobs_yaml
-      - deploy_and_invalidate_cloudfront_cache
+      - deploy_and_invalidate_cloudfront_cache:
           requires:
             - build_site
