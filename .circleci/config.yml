@@ -42,7 +42,7 @@ jobs:
           at: ~/workspace
       - run:
           name: Install awscli
-          command: 'pip install --user awscli'
+          command: 'apt-get install awscli'
       - run:
           name: Deploy to S3
           command: |
