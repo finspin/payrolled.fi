@@ -1,0 +1,51 @@
+version: 2
+jobs:
+  generate_jobs_yaml:
+    docker:
+      - image: circleci/python:3.6.8
+    steps:
+      - checkout
+      - run:
+          name: Generate yaml file with jobs
+          command: 'python scripts/get-jobs.py'
+  build_site:
+    docker:
+      - image: circleci/ruby:2.6.0
+    steps:
+      - run:
+          name: Build site
+          command: 'jekyll build'
+  deploy:
+    docker:
+      - image: circleci/python:3.6.8
+    steps:
+      - run:
+          name: Install boto3
+          command: 'pip install --user boto3'
+      - run:
+          name: Install awscli
+          command: 'pip install --user awscli'
+      - run:
+          name: Deploy to S3
+          command: |
+            if [ "${CIRCLE_BRANCH}" = "master" ]; then
+              aws s3 sync ./_site  s3://www.payrolled.fi --delete
+            else
+              echo "Not master branch, dry run only"
+            fi
+  invalidate_cloudfront_cache:
+    steps:
+      run: 
+        command: |
+          aws configure set preview.cloudfront true
+          aws cloudfront create-invalidation --distribution-id $WWW_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+          aws cloudfront create-invalidation --distribution-id $NON_WWW_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+
+workflows:
+  version: 2
+  deploy_site:
+    jobs:
+      - generate_jobs_yaml
+      - build_site
+      - deploy
+      - invalidate_cloudfront_cache
