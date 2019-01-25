@@ -16,10 +16,10 @@ jobs:
       - image: circleci/ruby:2.6.0
     steps:
       - run:
-	  name: Install jekyll
-	  command: |
-	    sudo apt-get install ruby-full build-essential zlib1g-dev
-	    gem install jekyll bundler
+          name: Install jekyll
+          command: |
+            sudo apt-get install ruby-full build-essential zlib1g-dev
+            gem install jekyll bundler
       - run:
           name: Build site
           command: 'jekyll build'
